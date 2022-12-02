@@ -15,21 +15,30 @@ Description: Presents a series of molecular and genetic routines in the R
     Methods and examples are described in Gezan, Oliveira, Galli, and Murray (2022) 
     <https://asreml.kb.vsni.co.uk/wp-content/uploads/sites/3/ASRgenomics_Manual.pdf>.
 License: MIT + file LICENSE
-Depends: R (>= 4.0.0)
-Imports: AGHmatrix, cowplot, crayon, data.table, ellipse, factoextra,
-        ggplot2, Matrix, methods, scattermore, stats, superheat, utils
-Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
+Depends: 
+    R (>= 4.0.0)
+Imports:
+    AGHmatrix,
+    cowplot,
+    crayon,
+    data.table,
+    ellipse,
+    factoextra,
+    ggplot2,
+    Matrix,
+    methods,
+    scattermore,
+    stats,
+    superheat,
+    utils
+Suggests: 
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: bzip2
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.1
 Language: en-US
-NeedsCompilation: no
-Packaged: 2022-12-02 19:11:21 UTC; jenkins
-Author: Salvador Gezan [aut, cre],
-  Darren Murray [aut],
-  Amanda Avelar de Oliveira [aut],
-  Giovanni Galli [aut],
-  VSN International [cph]
-Maintainer: Salvador Gezan <salvador.gezan@vsni.co.uk>

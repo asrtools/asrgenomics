@@ -2490,11 +2490,6 @@ match.G2A <- function(A = NULL, G = NULL, clean = TRUE, ord = TRUE,
   LL <- min(A.sparse[,3], G.sparse[,3])
   UL <- max(A.sparse[,3], G.sparse[,3])
 
-  A.sparse <- rbind(A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse)
-  A.sparse <- rbind(A.sparse, A.sparse)
-  G.sparse <- rbind(G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse)
-  G.sparse <- rbind(G.sparse, G.sparse)
-
   # Improved version of plot (faster). GG
   p <- ggplot(data.frame(AValue = A.sparse[,3], GValue = G.sparse[,3]),
               aes(x = AValue, y = GValue, color = 'black')) +
@@ -2527,6 +2522,12 @@ match.G2A <- function(A = NULL, G = NULL, clean = TRUE, ord = TRUE,
 
 
 }
+
+# A.sparse <- rbind(A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse, A.sparse)
+# A.sparse <- rbind(A.sparse, A.sparse)
+# G.sparse <- rbind(G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse, G.sparse)
+# G.sparse <- rbind(G.sparse, G.sparse)
+
 #' Check any kinship matrix K against phenotypic data
 #'
 #' Assesses a given kinship matrix against the provided phenotypic data to determine
