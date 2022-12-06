@@ -26,7 +26,7 @@ LazyDataCompression: bzip2
 RoxygenNote: 7.2.2
 Language: en-US
 NeedsCompilation: no
-Packaged: 2022-12-02 19:11:21 UTC; jenkins
+Packaged: 2022-12-06 10:45:50 UTC; jenkins
 Author: Salvador Gezan [aut, cre],
   Darren Murray [aut],
   Amanda Avelar de Oliveira [aut],
